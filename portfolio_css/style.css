@@ -81,10 +81,11 @@ header {
   line-height: 1.1;
 }
 .nickname {
-  font-size: 4em;
-
-  margin: 0 auto 24px;
+  margin: 0 0 16px;
+  font-style: italic;
+  opacity: 0.85;
 }
+
 .tagline {
   margin: 0 0 16;
   font-style: italic;
