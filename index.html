@@ -5,36 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brian Aross Portfolio</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="portfolio_css/style.css" />
   </head>
   <body>
     <header>
       <nav id="navbar">
         <!--Logo and links -->
-        <h1>Aross Brian</h1>
+        <a href="#home" class="logo">Aross Brian </a>
         <!-- <img src="images/sunny_lake.jpg" alt="Lake shore" /> -->
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects"> Projects</a></li>
-          <li><a href="contact"> Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <!--Main/Hero-->
     <main>
-      <section id="about_section">
-        <div>
-          <p class="greetings">Habari, I'm</p>
-          <h1>Brian Aross</h1>
-          <p class="nickname">but you can call me the Farm Defender</p>
-          <p class="tagline">
-            I grow things - crops in Migori, and now Software
-          </p>
+      <section id="home" class="hero">
+        <p class="greetings">Habari, I'm</p>
+        <h1>Brian Aross</h1>
+        <p class="nickname">but you can call me the Farm Defender</p>
+        <p class="tagline">I grow things - crops in Migori, and now Software</p>
+        <a href="#about" class="btn"> More about Me</a>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <img src="images/brian.jpg" alt="Portrait of Brian Aross Obonyo" />
+          <div class="about-text">
+            <p>
+              I'm Brian Aross Obonyo, from Migori, Kenya. I'm a CX specialist,
+              Intercom workflows curator, and Fin AI optimiser — I design how
+              support conversations flow, tune the AI agent that answers them,
+              and work out why things break for users so the process behind them
+              gets fixed.
+            </p>
+
+            <p>
+              I've joined McTaba Labs to learn what's happening underneath the
+              tools I configure — specifically QA, so I can test on purpose
+              instead of finding bugs by accident, and APIs, so I can build the
+              integrations I currently only describe.
+            </p>
+
+            <p>
+              Off screen I'm a dedicated farmer and the founder of the Migori
+              Car Community (MCC 044). Farming taught me patience and checking
+              on things before they become problems — both useful in code.
+            </p>
+          </div>
         </div>
       </section>
-      <section id="skills_section">
-        <h3>Profficiencies</h3>
+
+      <section id="skills">
+        <h2>Proficiency</h2>
         <div>
           <ul class="skills">
             <li>Intercom Setup/integrarions</li>
@@ -42,61 +69,56 @@
           </ul>
         </div>
       </section>
-      <section id="projects_section">
-        <h3>Projects Involved In</h3>
+
+      <section id="projects">
+        <h2>What I do</h2>
         <!--Here I learn about cards-->
         <div class="projects_container">
           <div class="card_container">
-            <div class="class_header">Fin Ai Optimisation</div>
+            <div class="card_header">Fin Ai Optimisation</div>
             <div class="card_body">
               <p>I will list all it entails here</p>
             </div>
           </div>
-        </div>
-        <!--second Project-->
-        <div class="projects_container">
+
+          <!--second Project-->
+
           <div class="card_container">
-            <div class="class_header">Support</div>
+            <div class="card_header">Support</div>
             <div class="card_body">
               <p>I will list all it entails here</p>
             </div>
           </div>
-        </div>
 
-        <!--Third Project-->
+          <!--Third Project-->
 
-        <div class="projects_container">
           <div class="card_container">
-            <div class="class_header">Account Management</div>
+            <div class="card_header">Account Management</div>
             <div class="card_body">
               <p>I will list all it entails here</p>
             </div>
           </div>
-        </div>
 
-        <!--Project 4-->
-        <div class="projects_container">
+          <!--Project 4-->
+
           <div class="card_container">
-            <div class="class_header">Fin AI Agent Specialist · Intercom</div>
+            <div class="card_header">Fin AI Agent Specialist · Intercom</div>
             <div class="card_body">
               <p>I will list all it entails here</p>
             </div>
           </div>
-        </div>
 
-        <div class="projects_container">
           <div class="card_container">
-            <div class="class_header">Intercom Workflows Setup</div>
+            <div class="card_header">Intercom Workflows Setup</div>
             <div class="card_body">
               <p>I will list all it entails here</p>
             </div>
           </div>
-        </div>
 
-        <!--CX Specialist-->
-        <div class="projects_container">
+          <!--CX Specialist-->
+
           <div class="card_container">
-            <div class="class_header">CX Specialist-</div>
+            <div class="card_header">CX Specialist-</div>
             <div class="card_body">
               <p>I will list all it entails here</p>
             </div>
@@ -104,8 +126,8 @@
         </div>
       </section>
 
-      <section id="contact_section">
-        <h3>Contact Us</h3>
+      <section id="contact">
+        <h2>Contact Us</h2>
         <form>
           <div>
             <label>Full Name</label>
@@ -125,7 +147,7 @@
               <option>Intercom API integrations</option>
             </select>
           </div>
-          <button>Subbmit</button>
+          <button>Contact Me</button>
         </form>
       </section>
     </main>
@@ -133,9 +155,19 @@
     <footer>
       <div class="footer_details">
         <ul>
-          <li>Github</li>
-          <li>LinkedIn</li>
-          <li>X</li>
+          <li>
+            <a href="https://github.com/arossbrian-creator" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/brian-aross-14090955/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://x.com/home" target="_blank">X</a></li>
         </ul>
       </div>
     </footer>

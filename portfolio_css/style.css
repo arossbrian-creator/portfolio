@@ -1,0 +1,138 @@
+:root {
+  /*All colours are declared once here as CSS variables and
+   referenced everywhere else with var(--name)
+   --darkets is a varibale name mapped to the color code #010736; 
+   
+    Idea: Define Once use several times all over*/
+  /* the color pallete picked is from https://colorhunt.co/palette/0107360d1c4222396ffcf1d0*/
+
+  --darkest: #010736; /* deepest navy – footer, body text */
+  --primary: #0d1c42; /* navy – header, nav, headings */
+  --secondary: #22396f; /* mid blue – buttons, links, bars, hovers */
+  --cream: #fcf1d0; /* page background, text on dark */
+  --card: #fffdf7; /* slightly lighter than cream, for cards to lift off the page */
+  --muted: rgba(13, 28, 66, 0.12); /* navy at 12% – borders, bar tracks */
+  --tint: rgba(23, 57, 111, 0.08); /* blue at 8% – highlight boxes */
+  --hover_links: rgba(252, 241, 208, 0.12);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--cream); /*background referecnce the variable --cream*/
+  color: var(--darkest);
+  line-height: 1.6;
+}
+header {
+  background: var(--primary);
+  color: var(--cream);
+  text-align: centre;
+  padding: 30px 20px 0;
+}
+#navbar {
+  /* I dont understand why we use #navbar instead of .navbar*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px; /*where does the gap go to, where does it make sense to be?*/
+}
+#navbar a {
+  color: var(--cream);
+  text-decoration: none;
+  border-radius: 10px 6px;
+  display: inline-block;
+}
+
+#navbar .logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#navbar a:hover {
+  background: var(--hover_links);
+}
+
+.hero {
+  background: var(--darkest);
+  color: var(--cream);
+  text-align: center;
+  padding: 80px 20px 60px;
+  margin-top: 5px;
+}
+.greetings {
+  margin: 0;
+  font-size: 1em; /* what is 1 em */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.hero h1 {
+  margin: 6px 0 4px;
+  font-size: 3em;
+  line-height: 1.1;
+}
+.nickname {
+  font-size: 4em;
+
+  margin: 0 auto 24px;
+}
+.tagline {
+  margin: 0 0 16;
+  font-style: italic;
+  opacity: 0.85;
+}
+.btn {
+  display: inline-block;
+  background: var(--cream);
+  color: var(--primary);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.card_container {
+  background: var(--card);
+  border: 1px solid var(--muted);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(1, 7, 54, 0.08);
+}
+.card_header {
+  margin: 0 0 12px;
+  font-size: 1.5em;
+  color: var(--primary);
+}
+.footer_details {
+  background: var(--darkest);
+  color: var(--cream);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+.footer_details ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.footer_details a {
+  color: var(--cream);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
